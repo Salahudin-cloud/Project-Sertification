@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <View
+        android:id="@+id/containerViewClient"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/purple_500"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageProfilClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/containerViewClient"
+        app:layout_constraintLeft_toLeftOf="@id/containerViewClient"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/labelUsernameListClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username :"
+        android:textColor="@color/white"
+        android:layout_marginTop="29dp"
+        android:textSize="12sp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintLeft_toLeftOf="@id/imageProfilClient"
+        app:layout_constraintTop_toTopOf="@id/containerViewClient"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/labelNameListClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name  :"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintLeft_toLeftOf="@id/labelUsernameListClient"
+        app:layout_constraintTop_toBottomOf="@id/labelUsernameListClient"
+        />
+
+    <TextView
+        android:id="@+id/labelAlamatListClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat : "
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintLeft_toLeftOf="@id/labelUsernameListClient"
+        app:layout_constraintTop_toBottomOf="@id/labelPasswordListClient"
+        />
+
+    <TextView
+        android:id="@+id/labelHpListClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Hp :"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintLeft_toLeftOf="@id/labelUsernameListClient"
+        app:layout_constraintTop_toBottomOf="@id/labelNameListClient"
+        />
+
+    <TextView
+        android:id="@+id/labelKelaminListClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin :"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintLeft_toLeftOf="@id/labelUsernameListClient"
+        app:layout_constraintTop_toBottomOf="@id/labelHpListClient"
+        />
+
+
+    <TextView
+        android:id="@+id/labelPasswordListClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password :"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintLeft_toLeftOf="@id/labelUsernameListClient"
+        app:layout_constraintTop_toBottomOf="@id/labelKelaminListClient"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
